@@ -5,7 +5,7 @@ import {galleryItems} from './gallery-items.js';
 const gallery = document.querySelector(".gallery");
 const galleryMarkup = galleryItems
     .map(({original, preview, description}) =>
-        `<li class = "gallery__item"><a class = "gallery__link" href = ${original}><img src = ${preview} alt = ${description}
+        `<li class = "gallery__item"><a class = "gallery__link" href = ${original}><img src = ${preview} alt = '${description}'
 data-source = ${original} class = "gallery__image"></a></li>`)
     .join(""); 
 
